@@ -443,7 +443,8 @@ body.assistindo .topo,body.assistindo .barra-nav{opacity:0;transition:opacity .8
 .capa-s.on .capa-logo{opacity:1;transform:none;transition:opacity 2s cubic-bezier(.22,.61,.36,1) .3s,transform 2.6s cubic-bezier(.19,1,.22,1) .3s}
 .geracoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(var(--u)*2.6)}
 .geracoes li{display:flex;flex-direction:column;gap:.45em}
-.geracoes figure{aspect-ratio:1/1;overflow:hidden;background:#1b1712;margin-bottom:calc(var(--u)*.8)}
+.geracoes figure{aspect-ratio:1/1;overflow:hidden;background:#1b1712;margin-bottom:calc(var(--u)*.8);position:relative}
+.geracoes figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6em .9em .7em;font-size:var(--fe);letter-spacing:.24em;text-transform:uppercase;color:rgba(244,238,227,.9);background:linear-gradient(0deg,rgba(20,15,10,.75),rgba(20,15,10,0))}
 .geracoes img{width:100%;height:100%;object-fit:cover;display:block;filter:sepia(.3) saturate(.75) contrast(1.02)}
 .geracoes .sem-foto{display:grid;place-items:center;background:linear-gradient(160deg,#2a231b,#15110d)}
 .geracoes .sem-foto span{font-family:var(--serif);font-size:calc(var(--u)*5);color:rgba(207,179,139,.55);letter-spacing:.05em}
@@ -484,8 +485,8 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
         <div class="sobre" data-a>Nossas origens · quatro gerações</div>
         <h2 style="font-size:calc(var(--fh)*.72)"><span class="tit"><span>O patrimônio não foi conquistado.</span></span><span class="tit"><span><em>Foi conservado.</em></span></span></h2>
         <ol class="geracoes" data-a>
-          <li><figure><img data-src="img/honorato.jpg" alt="Coronel Honorato Martins Borges e Perciliana de Aguiar"></figure><small>I</small><h3>Coronel Honorato Martins Borges <i>&amp;</i> Perciliana de Aguiar</h3><p>Um dos fundadores de Patrocínio. A terra e a pecuária.</p></li>
-          <li><figure class="sem-foto"><span>P <i>&amp;</i> L</span></figure><small>II</small><h3>Pedro Martins Borges <i>&amp;</i> Leonor Alves Borges</h3><p>A continuidade do patrimônio.</p></li>
+          <li><figure><img data-src="img/honorato.jpg" alt="Coronel Honorato Martins Borges e Perciliana de Aguiar" style="object-position:50% 4%"></figure><small>I</small><h3>Coronel Honorato Martins Borges <i>&amp;</i> Perciliana de Aguiar</h3><p>Um dos fundadores de Patrocínio. A terra e a pecuária.</p></li>
+          <li><figure><img data-src="img/familia1918.jpg" alt="Família do Coronel Honorato Martins Borges em 1918" style="object-position:50% 38%"><figcaption>Família Borges, 1918</figcaption></figure><small>II</small><h3>Pedro Martins Borges <i>&amp;</i> Leonor Alves Borges</h3><p>A continuidade do patrimônio.</p></li>
           <li><figure><img data-src="img/retrato.jpg" alt="Alaor Ribeiro Paiva e Conceição Borges Paiva" style="object-position:50% 25%"></figure><small>III</small><h3>Alaor Ribeiro Paiva <i>&amp;</i> Conceição Borges Paiva</h3><p>A consolidação da família e a bacia leiteira.</p></li>
           <li><figure><img data-src="img/casal_terra.jpg" alt="Roni de Moraes Leme e Iêda Maria Paiva" style="object-position:58% 35%"></figure><small>IV</small><h3>Roni de Moraes Leme <i>&amp;</i> Iêda Maria Paiva</h3><p>O café, o vinho e a Bruma Alta.</p></li>
         </ol>
