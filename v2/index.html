@@ -524,13 +524,22 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
 .numeros div{display:flex;flex-direction:column;gap:.55em}
 .numeros b{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*4.6);line-height:1;color:var(--ti);letter-spacing:-.02em;white-space:nowrap}
 .numeros span{font-size:calc(var(--fb)*.95);line-height:1.5;color:var(--tx)}
-.numeros b small,.linhas dt small,.paises .trio b small{font-family:var(--serif);font-style:italic;font-size:.42em;letter-spacing:0;text-transform:none;color:var(--ac);margin-left:.12em}
-.paises .trio b small{color:var(--ouro)}
+.numeros b small,.linhas dt small,.paises .trio b small,.faixa4 b small{font-family:var(--serif);font-style:italic;font-size:.42em;letter-spacing:0;text-transform:none;color:var(--ac);margin-left:.12em}
+.paises .trio b small,.faixa4 b small{color:var(--ouro)}
 .linhas{border-bottom:1px solid var(--fi)}
 .linhas div{display:grid;grid-template-columns:calc(var(--u)*13) 1fr;align-items:baseline;gap:calc(var(--u)*2.4);padding:calc(var(--u)*1.25) 0;border-top:1px solid var(--fi)}
 .linhas dt{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*4.4);line-height:1;color:var(--ti);letter-spacing:-.02em;white-space:nowrap}
 .linhas dd{font-size:var(--fb);line-height:1.5;color:var(--tx);max-width:26em}
 .legenda-longa{font-family:var(--serif)!important;font-size:calc(var(--u)*2.3)!important;letter-spacing:0!important;text-transform:none!important;line-height:1.2;color:var(--creme)!important;right:calc(var(--u)*2)}
+.faixa4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(var(--u)*3);border-top:1px solid rgba(244,238,227,.4);padding-top:calc(var(--u)*1.9)}
+.faixa4 div{display:flex;flex-direction:column;gap:.65em}
+.faixa4 b{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*5.4);line-height:1;color:var(--creme);letter-spacing:-.02em;white-space:nowrap}
+.faixa4 span{font-size:calc(var(--fb)*.95);line-height:1.45;color:rgba(236,238,242,.86);max-width:15em}
+.ponte{display:flex;justify-content:space-between;align-items:baseline;gap:calc(var(--u)*3);border-top:1px solid rgba(244,238,227,.18);padding-top:calc(var(--u)*1.5)}
+.ponte .elo{font-family:var(--serif);font-style:italic;font-size:calc(var(--u)*2.4);line-height:1.15;color:var(--ouro)}
+.ponte .fonte{text-align:right;white-space:nowrap}
+.caso h2{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.caso .sobre{color:var(--creme);text-shadow:0 1px 12px rgba(0,0,0,.6)}
 /* mosaic of references */
 .mosaico{display:grid;grid-template-columns:1.45fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:calc(var(--u)*.5);height:calc(var(--u)*30)}
 .mosaico .g{grid-row:1/3}
@@ -558,8 +567,8 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
 .receitas.fotos img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08);transition:transform .3s}
 .s.on .receitas.fotos img{transform:scale(1);transition:transform 8s cubic-bezier(.16,.6,.2,1) .4s}
 .receitas.fotos p{min-height:0}
-@media (orientation:portrait){ .fases3,.mosaico,.painel4{grid-template-columns:1fr;grid-template-rows:none;height:auto} .fases3 li,.mosaico figure,.painel4 li{height:calc(var(--u)*30)} .mosaico .g,.mosaico .w{grid-row:auto;grid-column:auto} .painel4{margin:0} .mundo .col{max-width:none} .mapa{position:relative;right:auto;top:auto;width:100%;transform:none;margin-top:calc(var(--u)*4)} .cabeca{flex-direction:column;align-items:flex-start} .motivos li{grid-template-columns:calc(var(--u)*4.5) 1fr} .motivos p{grid-column:2} .linhas div{grid-template-columns:1fr} }
-@media (orientation:landscape) and (max-height:500px){ .fases3,.mosaico,.painel4{height:calc(var(--u)*25)} .gigante{font-size:calc(var(--u)*10)} .numeros b{font-size:calc(var(--u)*3.8)} .linhas div{padding:calc(var(--u)*.8) 0} .linhas dt{font-size:calc(var(--u)*3.6)} .motivos li{padding:calc(var(--u)*.9) 0} .receitas.fotos .m{aspect-ratio:21/9} .nota{display:none} }
+@media (orientation:portrait){ .faixa4{grid-template-columns:1fr 1fr;row-gap:calc(var(--u)*2)} .ponte{flex-direction:column} .ponte .fonte{text-align:left;white-space:normal} .fases3,.mosaico,.painel4{grid-template-columns:1fr;grid-template-rows:none;height:auto} .fases3 li,.mosaico figure,.painel4 li{height:calc(var(--u)*30)} .mosaico .g,.mosaico .w{grid-row:auto;grid-column:auto} .painel4{margin:0} .mundo .col{max-width:none} .mapa{position:relative;right:auto;top:auto;width:100%;transform:none;margin-top:calc(var(--u)*4)} .cabeca{flex-direction:column;align-items:flex-start} .motivos li{grid-template-columns:calc(var(--u)*4.5) 1fr} .motivos p{grid-column:2} .linhas div{grid-template-columns:1fr} }
+@media (orientation:landscape) and (max-height:500px){ .fases3,.mosaico,.painel4{height:calc(var(--u)*25)} .faixa4 b{font-size:calc(var(--u)*4.4)} .ponte .elo{font-size:calc(var(--u)*2)} .gigante{font-size:calc(var(--u)*10)} .numeros b{font-size:calc(var(--u)*3.8)} .linhas div{padding:calc(var(--u)*.8) 0} .linhas dt{font-size:calc(var(--u)*3.6)} .motivos li{padding:calc(var(--u)*.9) 0} .receitas.fotos .m{aspect-ratio:21/9} .nota{display:none} }
 @media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important} }
 </style>
 
@@ -798,7 +807,7 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
       <div class="trio">
         <figure style="--k:0;--op:50% 40%"><img data-src="img/ref_caudalie_vinhas.jpg" alt="Les Sources de Caudalie"><figcaption data-a><span class="pais"><svg class="bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#0055A4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#EF4135"/></svg>França · Bordeaux</span><b>6<small>milhões</small></b><span class="tx">de visitantes nos vinhedos de Bordeaux em 2024</span><small class="cred">Foto: Les Sources de Caudalie</small></figcaption></figure>
         <figure style="--k:1;--op:50% 50%"><img data-src="img/ref_antinori_cave.jpg" alt="Antinori nel Chianti Classico"><figcaption data-a><span class="pais"><svg class="bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#F4F5F0"/><rect x="20" width="10" height="20" fill="#CE2B37"/></svg>Itália · Toscana</span><b>€ 400</b><span class="tx">gasto médio de cada enoturista na Itália</span><small class="cred">Foto: Antinori nel Chianti Classico</small></figcaption></figure>
-        <figure style="--k:2;--op:45% 50%"><img data-src="img/ref_vines_001.jpg" alt="The Vines of Mendoza"><figcaption data-a><span class="pais"><svg class="bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#74ACDF"/><rect y="6.67" width="30" height="6.66" fill="#fff"/><circle cx="15" cy="10" r="2.2" fill="#F6B40E"/></svg>Argentina · Mendoza</span><b>230</b><span class="tx">vinícolas abertas ao turismo em Mendoza</span><small class="cred">Foto: The Vines of Mendoza</small></figcaption></figure>
+        <figure style="--k:2;--op:45% 50%"><img src="img/ref_vines_001.jpg" data-src="img/ref_vines_001.jpg" alt="The Vines of Mendoza"><figcaption data-a><span class="pais"><svg class="bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#74ACDF"/><rect y="6.67" width="30" height="6.66" fill="#fff"/><circle cx="15" cy="10" r="2.2" fill="#F6B40E"/></svg>Argentina · Mendoza</span><b>230</b><span class="tx">vinícolas abertas ao turismo em Mendoza</span><small class="cred">Foto: The Vines of Mendoza</small></figcaption></figure>
       </div>
     </section>
 
@@ -816,18 +825,17 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
       </div>
     </section>
 
-    <section class="s t-esq" style="--sw:36%" data-cap="Mercado · Um caso próximo" data-fundo="terra" data-forma="poeira" data-o="0">
-      <figure class="sangra" style="--op:62% 40%"><img data-src="img/casal_cafe.jpg" alt="Roni e Iêda no cafezal"><figcaption class="legenda-longa">A Bruma Alta parte do mesmo ponto:<br>terra de café, vinho próprio e público fiel.</figcaption></figure>
+    <section class="s base caso" data-cap="Mercado · Um caso próximo" data-foto="img/ref_guaspari_vinhedo.jpg" data-pos="50% 45%" data-veu="baixo" data-forma="poeira" data-o="0">
       <div class="col" style="gap:calc(var(--u)*2.2)">
-        <div class="sobre" data-a>Espírito Santo do Pinhal · SP</div>
-        <h2 style="font-size:calc(var(--fh)*.8)"><span class="tit"><span>Da terra do café</span></span><span class="tit"><span>à nova fronteira do vinho.</span></span></h2>
-        <div class="numeros n4" data-a>
+        <div class="sobre pais-sobre" data-a><svg class="bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#009C3B"/><path d="M15 2.6 27.2 10 15 17.4 2.8 10z" fill="#FFDF00"/><circle cx="15" cy="10" r="4.3" fill="#002776"/><path d="M10.9 9.2c2.7-.5 5.6.1 8 1.6" stroke="#fff" stroke-width=".7" fill="none"/></svg>Um caso próximo · Espírito Santo do Pinhal, SP</div>
+        <h2 style="font-size:calc(var(--fh)*.9)"><span class="tit"><span>Da terra do café</span></span><span class="tit"><span>à nova fronteira do vinho.</span></span></h2>
+        <div class="faixa4" data-a>
           <div><b>47</b><span>projetos de vinícolas em menos de 20 anos</span></div>
           <div><b>50<small>%+</small></b><span>da receita das vinícolas vem do enoturismo; na Guaspari, mais de 70%</span></div>
           <div><b>3<small>mil</small></b><span>leitos de hospedagem faltando na região</span></div>
           <div><b>R$ 300<small>+</small></b><span>por pessoa nas experiências de visita</span></div>
         </div>
-        <p class="fonte" data-a>Fonte: Bloomberg Línea, “Como o turismo transformou a terra do café em nova fronteira do vinho no Brasil”, agosto de 2025.</p>
+        <div class="ponte" data-a><p class="elo">No Cerrado Mineiro, a Bruma Alta parte do mesmo ponto.</p><p class="fonte">Fonte: Bloomberg Línea, agosto de 2025 · Foto: Vinícola Guaspari</p></div>
       </div>
     </section>
 
