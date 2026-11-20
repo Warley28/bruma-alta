@@ -613,6 +613,15 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
 .brasil .elo{font-family:var(--serif);font-style:italic;font-size:calc(var(--u)*2.3);line-height:1.15;color:var(--ac)}
 @media (orientation:portrait){ .sangra .duo{grid-template-rows:none;grid-template-columns:1fr 1fr} .sangra .duo>div:last-child span{bottom:calc(var(--u)*1.8)} .comp{grid-template-columns:1fr} .tres{grid-template-columns:1fr;gap:calc(var(--u)*2)} }
 @media (orientation:landscape) and (max-height:500px){ .comp{gap:calc(var(--u)*.6) calc(var(--u)*1.6)} .comp span{display:none} .causa{font-size:calc(var(--fh)*.64)} .causa ~ .regua{display:none} .brasil .col{gap:calc(var(--u)*1.1)!important} .brasil h2{font-size:calc(var(--fh)*.66)!important} .tres{padding-top:calc(var(--u)*1.1)} .tres div{gap:.4em} .tres b{font-size:calc(var(--u)*3.8)} }
+/* v3 · próximos marcos (igual à v4) */
+.faixa-foto>div{background:transparent;height:calc(var(--u)*7.5)}
+.etapas{border-bottom:1px solid var(--fi)}
+.etapas li{display:grid;grid-template-columns:calc(var(--u)*7) minmax(0,1.15fr) minmax(0,1fr);align-items:center;gap:calc(var(--u)*2.4);padding:calc(var(--u)*1.1) 0;border-top:1px solid var(--fi)}
+.etapas .n{font-family:var(--serif);font-size:calc(var(--u)*2.7);line-height:1;color:var(--ac)}
+.etapas h3{font-family:var(--serif);font-weight:400;font-size:calc(var(--u)*3.3);line-height:1.05;color:var(--ti);letter-spacing:-.01em}
+.etapas p{font-size:calc(var(--fb)*.95);line-height:1.45;color:var(--tx)}
+@media (orientation:portrait){ .etapas li{grid-template-columns:calc(var(--u)*5) 1fr;row-gap:.4em} .etapas p{grid-column:2} }
+@media (orientation:landscape) and (max-height:500px){ .etapas li{padding:calc(var(--u)*.6) 0} .etapas h3{font-size:calc(var(--u)*2.8)} .marcos .col{gap:calc(var(--u)*1.2)!important} .marcos h2{font-size:calc(var(--fh)*.62)!important} .faixa-foto>div{height:calc(var(--u)*4)} }
 </style>
 
 <div id="palco">
@@ -870,6 +879,20 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
       </div>
     </section>
 
+    <section class="s claro marcos" data-cap="Expansão · Próximos marcos" data-tom="claro" data-fundo="papel" data-forma="poeira" data-o="0">
+      <div class="col" style="gap:calc(var(--u)*1.6)">
+        <div class="sobre" data-a>Próximos marcos</div>
+        <h2 style="font-size:calc(var(--fh)*.74)"><span class="tit"><span>Da visão compartilhada</span></span><span class="tit"><span><em>à primeira implantação.</em></span></span></h2>
+        <ol class="etapas">
+          <li data-a><span class="n">01</span><h3>Escopo e implantação</h3><p>Programa, capacidade, localização e requisitos de implantação.</p></li>
+          <li data-a><span class="n">02</span><h3>Estudos e orçamento</h3><p>Demanda, modelo de operação, investimento e cronograma de referência.</p></li>
+          <li data-a><span class="n">03</span><h3>Estrutura de participação</h3><p>Objeto do investimento, governança e condições para a conversa individual.</p></li>
+        </ol>
+        <div class="faixa-foto revela"><div style="--k:2"><div class="m"><img data-src="img/drone_vinhedo.jpg" alt="Vista aérea do vinhedo da Bruma Alta" style="object-position:50% 62%"></div></div></div>
+        <p class="fonte" data-a>Formatos de participação a definir com o jurídico. Esta apresentação não constitui oferta de investimento.</p>
+      </div>
+    </section>
+
     <section class="s claro t-esq" style="--sw:38%" data-cap="Fase 1 · Por que primeiro" data-tom="claro" data-fundo="papel" data-forma="poeira" data-o="0">
       <figure class="sangra" style="--op:55% 50%"><img data-src="img/pc_mesa.jpg" alt="Convidados brindando em evento da marca"><figcaption>Black Tie Petit Comité 2026</figcaption></figure>
       <div class="col" style="gap:calc(var(--u)*2.6)">
@@ -887,10 +910,10 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
       <div class="col" style="gap:calc(var(--u)*2.4)">
         <div class="cabeca"><h2 style="font-size:calc(var(--fh)*.86)"><span class="tit"><span>Quatro receitas <em>no mesmo lugar.</em></span></span></h2><p class="nota" data-a>Projeções em construção com o financeiro</p></div>
         <div class="receitas escuro fotos" data-a>
-          <div><div class="m"><img data-src="img/conc_cerimonia.jpg" alt="Eventos" style="object-position:50% 60%"></div><h3>Eventos</h3><p>Locação, buffet e produção.</p><b class="pendente">R$ a definir</b></div>
-          <div><div class="m"><img data-src="img/conc_piscina.jpg" alt="Hospedagem" style="object-position:50% 50%"></div><h3>Hospedagem</h3><p>Diárias e pacotes de fim de semana.</p><b class="pendente">R$ a definir</b></div>
-          <div><div class="m"><img data-src="img/conc_winebar.jpg" alt="Enoturismo" style="object-position:50% 40%"></div><h3>Enoturismo</h3><p>Visitas, degustações e vindima.</p><b class="pendente">R$ a definir</b></div>
-          <div><div class="m"><img data-src="img/pc_caviar.jpg" alt="Gastronomia" style="object-position:50% 50%"></div><h3>Gastronomia</h3><p>Restaurante e harmonizações.</p><b class="pendente">R$ a definir</b></div>
+          <div><div class="m"><img data-src="img/conc_cerimonia.jpg" alt="Eventos" style="object-position:50% 60%"></div><h3>Eventos</h3><p>Locação, buffet e produção.</p></div>
+          <div><div class="m"><img data-src="img/conc_piscina.jpg" alt="Hospedagem" style="object-position:50% 50%"></div><h3>Hospedagem</h3><p>Diárias e pacotes de fim de semana.</p></div>
+          <div><div class="m"><img data-src="img/conc_winebar.jpg" alt="Enoturismo" style="object-position:50% 40%"></div><h3>Enoturismo</h3><p>Visitas, degustações e vindima.</p></div>
+          <div><div class="m"><img data-src="img/pc_caviar.jpg" alt="Gastronomia" style="object-position:50% 50%"></div><h3>Gastronomia</h3><p>Restaurante e harmonizações.</p></div>
         </div>
         <p data-a style="font-size:calc(var(--fb)*.9)">Nenhum número aqui é promessa de retorno.</p>
       </div>
@@ -981,7 +1004,7 @@ body[data-tom="claro"] .topo .simbolo{filter:none;opacity:.6}
   <nav class="barra-nav" aria-label="Navegação da apresentação">
     <button class="nav ant" id="ant" aria-label="Slide anterior"></button>
     <div class="trilho" id="trilho"><i></i></div>
-    <div class="conta" id="conta">01 <small>/ 26</small></div>
+    <div class="conta" id="conta">01 <small>/ 27</small></div>
     <button class="nav" id="prox" aria-label="Próximo slide"></button>
     <button class="nav tela" id="tela" aria-label="Tela cheia"></button>
   </nav>
