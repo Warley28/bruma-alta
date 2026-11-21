@@ -829,6 +829,15 @@ body.cta-visivel .cta-circulo{display:inline-flex;animation:cta-entra .9s cubic-
   .circulo-s .circ-interesse b{font-size:16px}
 }
 @media (orientation:landscape) and (max-height:500px){ .circulo-s .circ-col{gap:calc(var(--u)*4)} .circulo-s .circ-form{gap:6px} .circ-campo input{height:46px;padding-top:18px} .circ-nota{display:none} .cta-circulo{min-height:38px;font-size:15px} }
+/* celulares baixos (iPhone SE, 8): compacta o conteúdo para caber sem rolar */
+@media (orientation:portrait) and (max-height:760px){
+  .s > .col{zoom:.84}
+  .sangra,.sangra.esq{height:24vh}
+  .trio{height:22vh}
+  .s:has(.razoes.escuro) .sangra{height:15vh}
+  .brasil .sangra{height:14vh}
+}
+@media (orientation:portrait) and (max-height:700px){ .s > .col{zoom:.8} .s,.s.base{padding-top:calc(var(--u)*7.5)} }
 </style>
 
 <div id="palco">
